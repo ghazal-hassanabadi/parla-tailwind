@@ -1,0 +1,492 @@
+/* ===================== متغیرها ===================== */
+
+:root {
+    /* رنگ‌ها */
+    --color-page: #969185;
+    --color-sand: #938b7c;
+    --color-card: #c2b8a7;
+    --color-green: #55623d;
+    --color-green-light: #6a7656;
+    --color-button: #6b7559;
+    --color-nav-hover: #454139;
+    --color-text: black;
+    --color-text-light: white;
+    --color-welcome-text: rgb(19, 32, 1);
+    --color-field-text: rgb(61, 60, 60);
+    --color-line: rgba(255, 255, 255, 0.25);
+
+    /* فونت‌ها */
+    --font-main: "Lalezar", sans-serif;
+    --font-body: "Vazirmatn", sans-serif;
+    --font-logo: "Playfair Display", serif;
+
+    /* گوشه‌ها */
+    --radius: 7px;
+    --radius-s: 5px;
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-page);
+    font-family: var(--font-main);
+}
+
+a {
+    color: var(--color-text);
+}
+
+.lalezar-regular {
+    font-family: var(--font-main);
+    font-weight: 50;
+    font-style: normal;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 17px;
+    background-color: var(--color-sand);
+    color: var(--color-welcome-text);
+    padding: 5px;
+}
+
+
+/* ---------- هدر ---------- */
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 0;
+    padding: 8px 0 0;
+    background-color: var(--color-green);
+}
+
+.name {
+    order: 1;
+    margin: 0 12px;
+    color: var(--color-text-light);
+    font-family: var(--font-logo);
+    font-size: 28px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.search {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.search input {
+    width: 120px;
+    height: 30px;
+    margin-right: 5px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: var(--color-card);
+    color: var(--color-text);
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-icon {
+    order: 3;
+    margin: 0 12px;
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    transform: translateY(4px);
+}
+
+.user-icon:hover {
+    opacity: 0.7;
+    background-color: var(--color-green-light);
+}
+
+header nav {
+    order: 4;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 5px;
+    padding: 10px 8px;
+    background-color: var(--color-green);
+    border-top: 1px solid var(--color-line);
+}
+
+header nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 4px 6px;
+}
+
+
+/* ---------- فرم‌ها ---------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    direction: rtl;
+    text-align: right;
+    font-family: var(--font-body);
+   
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.sign,
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: var(--color-card);
+    border-radius: var(--radius);
+    margin-top: 20px;
+}
+
+.sign h1,
+.login h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+main form input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    border: none;
+    border-radius: var(--radius-s);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: var(--radius-s);
+    font-size: 15px;
+    color: var(--color-field-text);
+    resize: vertical;
+}
+
+
+
+.message {
+    display: none;
+}
+
+.forgot {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-top: 15px;
+}
+
+main form button {
+    align-self: center;
+    min-width: 100px;
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* ---------- فوتر ---------- */
+
+footer {
+    background-color: var(--color-sand);
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 28px 16px;
+    text-align: center;
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+.end h2 {
+    font-family: var(--font-logo);
+    font-size: 36px;
+}
+
+.end > p:first-of-type {
+    font-size: 14px;
+}
+
+.end h3 {
+    font-size: 17px;
+}
+
+.one {
+    font-size: 17px;
+}
+
+.end .contact {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.contact i {
+    margin: 0 3px;
+    font-size: 17px;
+    color: var(--color-text);
+}
+
+.end a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.end a:hover {
+    color: var(--color-card);
+}
+
+.end nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    background-color: transparent;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .welcome {
+        font-size: 19px;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        gap: 20px;
+        min-height: 60px;
+        padding: 0 20px;
+    }
+
+    .name {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    header nav {
+        order: 2;
+        flex: 1 1 auto;
+        padding: 0;
+        gap: 20px;
+        background-color: transparent;
+        border-top: none;
+    }
+
+    .search {
+        order: 3;
+    }
+
+    .search input {
+        width: 150px;
+    }
+
+    .user-icon {
+        order: 4;
+        margin: 0;
+    }
+
+    main {
+        padding: 32px 24px;
+    }
+
+    main form {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sign,
+    .login {
+        flex: 1 1 0;
+        max-width: 400px;
+        min-height: 530px;
+        padding: 24px;
+    }
+
+    .end {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        align-items: start;
+        gap: 12px 24px;
+        padding: 32px 40px;
+    }
+
+    .end h2 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 44px;
+    }
+
+    .end > p:first-of-type {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 15px;
+    }
+
+    .end h3:last-of-type {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .end .contact {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .end h3:first-of-type,
+    .one {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .footer-links {
+        grid-column: 3;
+        grid-row: 2;
+    }
+}
+
+
+@media (min-width: 1280px) {
+
+    .welcome {
+        font-size: 21px;
+    }
+
+    header {
+        min-height: 65px;
+        padding: 0 25px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    header nav {
+        gap: 28px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    header nav a:hover {
+        color: var(--color-nav-hover);
+    }
+
+    .search input {
+        width: 180px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 40px 30px;
+    }
+
+    main form {
+        gap: 100px;
+    }
+
+    .sign,
+    .login {
+        max-width: 450px;
+        min-height: 600px;
+        padding: 30px;
+    }
+
+    .sign h1,
+    .login h1 {
+        font-size: 28px;
+    }
+
+    main form input,
+    textarea {
+        font-size: 17px;
+    }
+
+    .end {
+        padding: 40px 60px;
+    }
+
+    .end h2 {
+        font-size: 60px;
+    }
+
+    .end > p:first-of-type {
+        font-size: 17px;
+    }
+
+    .end h3,
+    .one {
+        font-size: 19px;
+    }
+
+    .end a {
+        font-size: 16px;
+    }
+}
