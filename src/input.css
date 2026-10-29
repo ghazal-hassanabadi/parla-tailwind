@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-olive: #55623d;
   --color-olive-light: #6a7656;
@@ -28,16 +31,39 @@
   --text-15: 15px;
   --text-17: 17px;
   --text-19: 19px;
-  --text-22: 22px;
-  --text-25: 25px;
-  --text-35: 35px;
-  --text-display: 40px;
-  --text-hero-title: 50px;
   --text-21: 21px;
+  --text-22: 22px;
   --text-28: 28px;
   --text-32: 32px;
   --text-36: 36px;
   --text-44: 44px;
+  --text-display: 40px;
+  --text-hero-title: 50px;
 }
 
+/*  Dark Mode: */
+.dark {
+  --color-black: #efe9db;          
+  --color-mauve: #1f1e1a;          
+  --color-olive-light: #4a5538;
+  --color-olive-dark: #46522f;
+  --color-olive-hover: #55603f;
+  --color-taupe-dark: #2f2c26;
+  --color-taupe-light: #4a453b;
+  --color-taupe-hover: #5a5446;
+  --color-tan: #5a5243;
+  --color-cream: #3a362d;
+  --color-button: #4a5539;
+  --color-welcome: #e8e2d4;
+  --color-field-text: #e5e0d5;
+  --color-figure-shadow: #d8d0bf;
+  --color-send-hover: #5a5446;
+  --color-hero-overlay: #00000060;
+  --color-hero-btn-hover: #2a2823;
+}
 
+/* -----------------------*/
+.dark :is(input, textarea) {
+  background-color: var(--color-taupe-dark);
+  color: var(--color-black);
+}
