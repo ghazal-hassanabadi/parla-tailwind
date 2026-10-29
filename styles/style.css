@@ -56,50 +56,6 @@ body {
 
 
 
-
-
-.category {
-    padding-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 0;
-    padding: 10px;
-    flex-wrap: wrap;
-    transition:  0.5s ease;
-    height: 200px;
-    transform: translateY(-50px);
-    
-    
-
-}
-
-.category :hover {
-     
-     transform: scale(1.02);
-}
-
-.category img {
-   
-    
-    width: 320px;
-    height: 270px;
-    object-fit: cover;
-    
-    
-}
-.product-categories {
-    text-align: center;
-    margin-top: 100px;
-    font-weight: 10px;
-    font-family: var(--font-vazirmatn);
-    font-weight: 400;
-    
-}
-    
-
-
 figure {
     margin: 0;
     text-align: center;
@@ -717,36 +673,6 @@ footer {
 
    
 
-    .category {
-        display: flex;
-        grid-template-columns: repeat(2 , 100px);
-        height: 2px;
-        padding: 5px 15px;
-        margin-top: 50px;
-        
-        gap: 20px;
-        margin-bottom: 190px;
-        
-       
-        
-        
-    }
-
-    .img-mobile {
-        display: none;
-    }
-
-    .category img {
-        width:80px ;
-        height:80px ;
-        object-fit: cover;
-        gap: 20px;
-        margin: 0px;
-        border-radius: 3px;
-        
-
-    }
-
     figure {
         margin: 0;
         text-align: center;
@@ -758,18 +684,6 @@ footer {
         margin-bottom: 0;
         font-size: 15px;
     } 
-
-
-     .product-categories {
-        grid-column: 1 / -1;
-       transform: translateY(-30px);
-       margin-top: 20px;
-       margin-bottom: 70px;
-        font-size: 25px;
-        font-family: var(--font-vazirmatn);
-        font-weight: 400;
-        
-    }
 
 
     .off {
@@ -1268,55 +1182,6 @@ body {
 }
 
 
-
-
-
-
-.category {
-    padding-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-top: 20px;
-    padding: 10px;
-    flex-wrap: wrap;
-    transition:  0.5s ease;
-    height: 500px;
-    transform: translateY(-200px);
-    
-
-}
-
-.category :hover {
-     
-     transform: scale(1.02);
-}
-
-.category img {
-   
-    
-    width: 260px;
-    height: 250px;
-    object-fit: cover;
-    
-    
-}
-
-.img-mobile {
-    display: block;
-}
-
- 
-.product-categories {
-    text-align: center;
-    margin-top: 70px;
-    font-weight: 10px;
-    font-family: var(--font-vazirmatn);
-    font-weight: 400;
-    transform: translateY(-100px);
-}
-    
 
 
 figure {
