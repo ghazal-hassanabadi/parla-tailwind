@@ -11,6 +11,10 @@
   --color-hero-overlay: #c6beb030;
   --color-hero-btn-hover: aliceblue;
   --color-cream: #f5efe3;
+  --color-tan: #bbad96;
+--color-olive-dark: #627047;
+--color-olive-hover: #69745a;
+--color-taupe-hover: #b3a995;
 
   --font-lalezar: "Lalezar", sans-serif;
   --font-vazir: "Vazirmatn", sans-serif;
@@ -27,3 +31,5 @@
   --text-display: 40px;
   --text-hero-title: 50px;
 }
+
+
