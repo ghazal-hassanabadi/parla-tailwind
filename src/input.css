@@ -12,9 +12,12 @@
   --color-hero-btn-hover: aliceblue;
   --color-cream: #f5efe3;
   --color-tan: #bbad96;
---color-olive-dark: #627047;
---color-olive-hover: #69745a;
---color-taupe-hover: #b3a995;
+  --color-olive-dark: #627047;
+  --color-olive-hover: #69745a;
+  --color-taupe-hover: #b3a995;
+  --color-button: #6b7559;
+  --color-field-text: #3d3c3c;
+  --color-send-hover: #9b927e;
 
   --font-lalezar: "Lalezar", sans-serif;
   --font-vazir: "Vazirmatn", sans-serif;
@@ -30,6 +33,11 @@
   --text-35: 35px;
   --text-display: 40px;
   --text-hero-title: 50px;
+  --text-21: 21px;
+  --text-28: 28px;
+  --text-32: 32px;
+  --text-36: 36px;
+  --text-44: 44px;
 }
 
 
