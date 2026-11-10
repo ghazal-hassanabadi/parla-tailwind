@@ -2,7 +2,12 @@
 
 Parla یک سایت فروشگاهی اکسسوری است (RTL و mobile-first). نسخه‌ی اول را با HTML و CSS خام نوشته بودم. در این مرحله همان صفحه‌ها را با Tailwind v4 بازسازی کردم، با همان ظاهر، و بعد از آن **Dark Mode** را هم اضافه کردم تا تفاوت دو روش را در یک کار واقعی از نزدیک ببینم.
 
-
+## نمایش زنده (Live Demo)
+ 
+🔗 [https://ghazal-hassanabadi.github.io/parla-tailwind/](https://ghazal-hassanabadi.github.io/parla-tailwind/)
+ 
+این نسخه با GitHub Pages منتشر شده و همان خروجی Tailwind است. برای دیدن Dark Mode از دکمه‌ی تغییر حالت در صفحه استفاده کن.
+ 
 
 ## هدف پروژه
 
