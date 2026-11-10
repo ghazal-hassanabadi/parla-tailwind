@@ -42,28 +42,45 @@
 }
 
 /*  Dark Mode: */
+/* ===== Dark Mode: نیمه‌تیره، زیتونیِ برند، کارت‌های روشن ===== */
+/* ===== Dark Mode: همه از یک خانواده (زیتونیِ برند) ===== */
 .dark {
-  --color-black: #efe9db;          
-  --color-mauve: #1f1e1a;          
-  --color-olive-light: #4a5538;
-  --color-olive-dark: #46522f;
-  --color-olive-hover: #55603f;
-  --color-taupe-dark: #2f2c26;
-  --color-taupe-light: #4a453b;
-  --color-taupe-hover: #5a5446;
-  --color-tan: #5a5243;
-  --color-cream: #3a362d;
-  --color-button: #4a5539;
-  --color-welcome: #e8e2d4;
-  --color-field-text: #e5e0d5;
-  --color-figure-shadow: #d8d0bf;
-  --color-send-hover: #5a5446;
-  --color-hero-overlay: #00000060;
-  --color-hero-btn-hover: #2a2823;
+  color-scheme: dark;
+
+  --color-mauve: #22251b;          /* زمینهٔ صفحه: زیتونیِ خیلی تیره */
+
+  --color-olive: #3a4529;          /* بخش‌های بزرگ و هدر */
+  --color-olive-light: #44502f;
+  --color-olive-dark: #4f5d36;     /* عنوان پلن‌ها */
+  --color-olive-hover: #313a24;
+
+  --color-taupe-dark: #1a1c14;     /* نوار خوش‌آمد و فوتر */
+  --color-taupe-light: #9d9884;    /* کارت‌ها: کرمِ مایل به زیتونی */
+  --color-taupe-hover: #b8b29d;
+  --color-tan: #868271;            /* کارت پلن‌ها */
+
+  --color-cream: #d6d1bb;
+  --color-button: #3d4729;
+  --color-send-hover: #4a5538;
+
+  --color-welcome: #d9d3bd;
+  --color-figure-shadow: #e4d9b0;
+  --color-hero-overlay: #14150f55;
 }
 
-/* -----------------------*/
-.dark :is(input, textarea) {
-  background-color: var(--color-taupe-dark);
-  color: var(--color-black);
-}
+/* متن پیش‌فرض */
+.dark body { color: #e8e2d2; }
+
+/* روی کارت‌های روشن متن تیره */
+.dark .bg-taupe-light,
+.dark .bg-tan { color: #1a1a14; }
+
+.dark footer { color: #e6e0cf; }
+
+/* فیلدهای فرم */
+.dark :is(input, textarea) { color: #1f1f1a; }
+
+/* عنوان و دکمهٔ پلن‌ها و دکمه‌های فرم */
+.dark article h3,
+.dark article button,
+.dark .bg-button { color: #f1ecdc; }
